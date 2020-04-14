@@ -1,0 +1,47 @@
+{
+	"name": "inversify-problem",
+	"version": "0.0.1",
+	"description": "",
+	"private": true,
+	"dependencies": {
+		"array.prototype.flatmap": "^1.2.3",
+		"customize-cra": "^0.9.1",
+		"inversify": "^5.0.1",
+		"react": "^16.13.1",
+		"react-app-polyfill": "^1.0.6",
+		"react-app-rewire-mobx": "^1.0.9",
+		"react-app-rewired": "^2.1.5",
+		"react-dom": "^16.13.1",
+		"reflect-metadata": "^0.1.13"
+	},
+	"devDependencies": {
+		"babel-plugin-import": "^1.13.0",
+		"babel-plugin-styled-components": "^1.10.7",
+		"@types/node": "^13.9.8",
+		"@types/react": "^16.9.29",
+		"@types/react-dom": "^16.9.5",
+		"react-scripts": "^3.4.1",
+		"typescript": "^3.8.3"
+	},
+	"scripts": {
+		"start": "react-app-rewired start",
+		"build": "react-app-rewired build",
+		"test": "react-app-rewired test",
+		"eslint": "eslint --fix $(find src -name '*.ts' -o  -name '*.tsx')",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app",
+		"parserOptions": {
+			"ecmaFeatures": {
+				"legacyDecorators": true
+			}
+		}
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	]
+}

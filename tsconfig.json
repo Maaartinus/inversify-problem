@@ -1,0 +1,44 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"sourceMap": true,
+		"downlevelIteration": true,
+		"importHelpers": true,
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"esnext",
+			"es6",
+			"webworker",
+			"es2015.collection",
+			"es2015.iterable",
+			"es2019"
+		],
+		"types": [
+			"node",
+			"reflect-metadata"
+		],
+		"allowJs": false,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"noImplicitAny": true,
+		"noEmitOnError": false,
+		"incremental": false,
+		"jsx": "preserve",
+		"noEmit": true
+	},
+	"include": [
+		"src/index.tsx",
+		"src/mg/extras.d.ts"
+	]
+}

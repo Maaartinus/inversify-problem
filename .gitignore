@@ -1,0 +1,15 @@
+.apt_generated
+.classpath
+.gradle
+.gradle
+.metadata
+build
+build
+logs
+node_modules
+
+*.bak
+*.bat
+*.class
+*.log
+*.tmp
