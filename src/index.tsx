@@ -2,25 +2,19 @@ import 'reflect-metadata';
 import { Container } from 'inversify';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { injectable } from 'inversify';
+import { injectable, inject } from 'inversify';
 
 @injectable()
 export class Simple {
 }
 
 @injectable()
-export class Composed {
-	simple: Simple;
+class Composed {
+    private readonly simple: Simple;
 
-	// ERROR: Module parse failed: Unexpected character '@'
-	// constructor(@inject simple: Simple) {
-	// 	this.simple = simple;
-	// }
-
-	// Error: Missing required @inject or @multiInject annotation in: argument 0 in class Composed.
-	constructor(simple: Simple) {
-		this.simple = simple;
-	}
+    constructor(@inject(Simple) simple: Simple) {
+        this.simple = simple;
+    }
 }
 
 const container = new Container();
